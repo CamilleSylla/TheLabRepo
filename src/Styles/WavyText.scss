@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@font-face {
+    font-family: "myFirstFont";
+    src: url(../Asstes/WavyText/Background/Font/jaapokki-regular.ttf);
+}
+#wavytext_container {
+    font-family: "myFirstFont";
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../Asstes/WavyText/Background/Waves.svg);
+  background-repeat: repeat-x;
+  background-size: 200vw;
+  background-position: top center;
+  background-position-x: 0px;
+  background-position-y: -140px;
+  text-transform: uppercase;
+  animation: waves linear infinite 7s;
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: 4vw;
+  color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #1C3661;
+  transition: all ease 0.6s;
+  cursor: pointer;
+  h1 {
+    font-size: 8em;
+  }
+  &:hover {
+      transform: rotate(20deg);
+      animation: wavyHover linear infinite 3s;
+      background-position-y: -175px;
+      letter-spacing: normal;
+  }
+}
+
+@keyframes waves {
+  from {
+    background-position-x: -100%;
+  }
+  to {
+    background-position-x: 0%;
+  }
+}
+@keyframes wavyHover {
+  from {
+    background-position-x: 100%;
+  }
+  to {
+    background-position-x: 0%;
+  }
+}
