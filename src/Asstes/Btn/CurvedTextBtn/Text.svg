@@ -1,0 +1,8 @@
+<svg viewBox="0 0 100 100">
+<defs>
+<path id="c-1" d="M 50, 50m -25, 0 a 25,25 0 1,1 50,0 a 25,25 0 1,1-50,0">
+</path></defs>
+<text font-size="8">
+<textPath xlink:href="#c-1">Bienvenue sur sercopointweb</textPath>
+</text>
+</svg>

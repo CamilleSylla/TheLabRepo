@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,600&display=swap");
+
+
+#neonbtn_container {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #neonbtn {
+        width: 10px;
+        height: 30px;
+        border: none;
+        outline: none;
+        color: #fff;
+        text-align: left;
+        background: transparent;
+        
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        font-family: "Chakra Petch", sans-serif;
+        font-size: 15px;
+        border-bottom: 2px solid #bf307f;
+        border-top: 2px solid #bf307f;
+        transition: all ease 0.3s;
+        &:hover {
+            width: 100px;
+            height: 30px;
+            animation: glowing linear infinite 3s;
+            border: 2px solid #0388A6;
+              box-shadow: 30px 16px teal;
+              border-radius: 10px;
+        }
+      }
+}
+#neonbtn {
+  width: 10px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: left;
+  background: transparent;
+  
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 15px;
+  border-bottom: 2px solid #bf307f;
+  border-top: 2px solid #bf307f;
+  transition: all ease 0.3s;
+  &:hover {
+      width: 100px;
+      height: 30px;
+      animation: glowing linear infinite 3s;
+      border: 2px solid #0388A6;
+        box-shadow: 30px 16px teal;
+        border-radius: 10px;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    border: 2px solid #0388A6;
+    box-shadow: 30px 16px 5px #0388A6;
+  }
+  25% {
+    border: 2px solid #151226;
+    box-shadow: 30px 16px 5px #151226;
+  }
+  50% {
+    border: 2px solid #024873;
+    box-shadow: 30px 16px 5px #024873;
+  }
+  75% {
+    border: 2px solid #8C3063;
+    box-shadow: 30px 16px 5px #8C3063;
+  }
+  100% {
+    border: 2px solid #bf307f;
+    box-shadow: 30px 16px 5px #bf307f;
+  }
+}
