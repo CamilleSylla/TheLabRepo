@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Underline";
+    src: url(../Asstes/Underline/Font/underline.ttf);
+}
+#underline{
+    font-family: "Underline";
+    font-size: 8vw;
+    p {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        background: #05A66B;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-repeat: no-repeat;
+        transition: all 1.5s ease-out;
+        white-space: nowrap;
+        z-index: 0;
+      }
+      
+      span {
+        position: relative;
+        z-index: 1;
+      }
+      
+      span:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: #fff;
+            bottom: 0px;
+            transition: all 0.8s ease-out;
+        
+      }
+      
+      p:hover {
+        background-position: 0 10px;
+        background: url(../Asstes/Underline/Img/Matrix.webp);
+        background-repeat: repeat-y;
+        background-size: 60vw;
+        background-clip: text;
+  -webkit-background-clip: text;
+  animation: wavyHover linear infinite 3s;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: white;
+
+    }
+      
+      span:hover:before {
+            transform: translateY(75px);
+            height: 15%;
+            background: #26BF78;
+      }
+}
+@keyframes wavyHover {
+    from {
+      background-position-y: 0;
+    }
+    to {
+      background-position-y: 100%;
+    }
+  }
