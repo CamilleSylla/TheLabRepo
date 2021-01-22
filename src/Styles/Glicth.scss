@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@font-face {
+  font-family: "Glitch";
+  src: url(../Asstes/Glitch/Font/FullPack.ttf);
+}
+
+#glicth {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    transition: all ease 0.6s;
+    font-family: "Glitch";
+    position: absolute;
+    font-size: 8vw;
+    color: #dfe0e1;
+    
+     &:first-of-type {
+        opacity: 0;
+        color: #f8224a;
+      }
+    cursor: pointer;
+  }
+  &:hover {
+    p {
+      &:first-of-type {
+        animation: move2 linear infinite 0.8s;
+        opacity: 0;
+        color: #f8224a;
+        transition-delay: 0.1s;
+      }
+      &:nth-of-type(2) {
+        color: #6affe1;
+        animation: move linear infinite 0.2s;
+        opacity: 0;
+        transition-delay: 0.1s;
+      }
+      &:nth-of-type(3) {
+        color: white;
+        animation: move3 linear infinite 0.2s;
+        opacity: 0;
+        transition-delay: 0.1s;
+      }
+      &:last-of-type {
+        background-clip: text;
+        -webkit-background-clip: text;
+        letter-spacing: 20px;
+        animation: wiggle linear infinite 0.15s;
+        text-shadow:3px 3px 0px #f822498c, 8px 8px 0px #6affe196,  0 0 1em #f8224a;
+      }
+    }
+  }
+}
+@keyframes wiggle {
+    from {
+      transform: rotate(2deg);
+    }
+    to {
+      transform: rotate(-2deg);
+    }
+  }
+@keyframes move {
+  from {
+    transform: translate(-10px, 25px);
+  }
+  to {
+    transform: translate(15px, 25px);
+  }
+}
+@keyframes move2 {
+  from {
+    transform: translate(5px, -50px);
+  }
+  to {
+    transform: translate(-10px, -50px);
+  }
+}
+@keyframes move3 {
+  from {
+    transform: translateX(5px);
+  }
+  to {
+    transform: translateX(-5px);
+  }
+}
