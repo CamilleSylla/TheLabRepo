@@ -8,11 +8,12 @@ import NeonBtn from './Component/Buttons/Neon/NeonBtn';
 import CurvedTextBtn from './Component/Buttons/CurvedTextBtn/CurvedTextBtn';
 import JumpBtn from './Component/Buttons/JumpBtn/JumpBtn';
 import Modern from './Component/Nav/ModernMenu/Modern';
+import NeonCards from './Component/PriceCard/Neon/NeonCards';
 
 function App() {
   return (
     <div className="App">
-      <Modern/>
+      <NeonCards/>
     </div>
   );
 }
