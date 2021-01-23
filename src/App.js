@@ -6,11 +6,13 @@ import Glicth from './Component/Glicth/Glitch';
 import Underline from './Component/Underline/Underline';
 import NeonBtn from './Component/Buttons/Neon/NeonBtn';
 import CurvedTextBtn from './Component/Buttons/CurvedTextBtn/CurvedTextBtn';
+import JumpBtn from './Component/Buttons/JumpBtn/JumpBtn';
+import Modern from './Component/Nav/ModernMenu/Modern';
 
 function App() {
   return (
     <div className="App">
-      <CurvedTextBtn/>
+      <Modern/>
     </div>
   );
 }
