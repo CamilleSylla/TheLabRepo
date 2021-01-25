@@ -6,19 +6,22 @@ import Chart from "../../../../Asstes/GlassBanner/img/chart.svg";
 import Man from "../../../../Asstes/GlassBanner/img/man.svg";
 import Contact from "../../../../Asstes/GlassBanner/img/contact.svg";
 import Map from "../../../../Asstes/GlassBanner/img/map.svg";
+import LocomotiveScroll from "locomotive-scroll";
 
 export default function GlassBanner() {
   const Title = "Developper vos projets web n'a jamais été aussi simple.";
+  
+  
 
   return (
-    <section  id="glassbanner_container">
+    <section data-scroll-section id="glassbanner_container">
       <div   id="glassbanner_text_container">
-        <div id="glassbanner_text">
+        <div data-scroll-direction="horizontal" data-scroll data-scroll-speed="3" id="glassbanner_text">
           <h1>{Title}</h1>
           <CurvedTextBtn />
         </div>
       </div>
-      <div id="glassbanner_slide_container">
+      <div data-scroll-direction="horizontal" data-scroll data-scroll-speed="-3" id="glassbanner_text" id="glassbanner_slide_container">
         <div id="glassbanner_slide">
           <div className="Items">
             <div className="zone1">

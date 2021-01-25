@@ -17,18 +17,8 @@ import { useEffect } from 'react';
 
 function App() {
   
-  useEffect(()=> {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('.App'),
-      smooth: true
-    });
-  })
-
   return (
     <div className="App" >
-      <div data-scroll data-scroll-speed="-2">
-        Salut
-      </div>
       <Home/>
     </div>
   );
