@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../../Styles/Glicth.scss";
 
 export default function Glicth() {
-  const Glitch = "Glitch";
+  const Glitch = "iconicdev";
 
  
 

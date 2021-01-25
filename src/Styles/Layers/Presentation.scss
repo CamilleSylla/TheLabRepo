@@ -1,0 +1,14 @@
+#presentation_container {
+    
+    div {
+        padding: 10em;
+        height: 100vh;
+        
+        &:first-child{
+            background-color: tomato;
+        }
+        &:last-child{
+            background-color: turquoise;
+        }
+    }
+}
